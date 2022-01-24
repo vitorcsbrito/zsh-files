@@ -19,52 +19,53 @@ alias mkdirp='mkdir -p'
 
 # OS X Aliases
 if [[ $CURRENT_OS == 'OS X' ]]; then
-    # Hidden files
-    alias showhiddenfiles='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder'
-    alias hidehiddenfiles='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder'
+  # Hidden files
+  alias showhiddenfiles='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder'
+  alias hidehiddenfiles='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder'
 
-    # Custom search script
-    alias ebook='locates ~/EBooks '
+  # Custom search script
+  alias ebook='locates ~/EBooks '
 
-    #
-    # Application aliases
-    #
-    alias lzd='lazydocker'
+  #
+  # Application aliases
+  #
+  alias lzd='lazydocker'
 
-    # Open from command line
-    alias finder='open -a Finder '
+  # Open from command line
+  alias finder='open -a Finder '
 elif [[ $CURRENT_OS == 'Linux' ]]; then
-    #
-    # Global Linux
-    #
+  #
+  # Global Linux
+  #
 
-    # Misc Aliases
-    alias ls='ls --color=auto'
+  # Misc Aliases
+  alias ls='ls --color=auto'
 
-    # Extensions
-    alias -s avi=vlc
-    alias -s html=$BROWSER
-    alias -s pdf=epdfview
-    alias -s txt=$EDITOR
-    alias -s text=$EDITOR
+  # Extensions
+  alias -s avi=vlc
+  alias -s html=$BROWSER
+  alias -s pdf=epdfview
+  alias -s txt=$EDITOR
+  alias -s text=$EDITOR
 
-    # Images
-    alias -s png=feh
-    alias -s jpeg=feh
-    alias -s jpg=feh
-    alias -s gif=feh
+  # Images
+  alias -s png=feh
+  alias -s jpeg=feh
+  alias -s jpg=feh
+  alias -s gif=feh
 
-    # Source Extensions
-    alias -s hs=$EDITOR
-    alias -s c=$EDITOR
+  # Source Extensions
+  alias -s hs=$EDITOR
+  alias -s c=$EDITOR
 
-    #
-    # User Specific Aliases
-    #
+  #
+  # User Specific Aliases
+  #
 
-    if [[ $USER == 'vitorbrito' ]]; then
-        
-    fi
+  if [[ $USER == 'vitorbrito' ]]; then
+    echo none
+  fi
 elif [[ $CURRENT_OS == 'Cygwin' ]]; then
-    # Nones
+  echo none
+  # Nones
 fi
