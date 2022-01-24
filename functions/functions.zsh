@@ -3,9 +3,9 @@
 #
 
 # Automatically run ls when cd-ing into a directory
-cd() {
-    builtin cd $* && ls;
-}
+#cd() {
+#    builtin cd $* && ls;
+#}
 
 #Get IP
 ip-addr() {

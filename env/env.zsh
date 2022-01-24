@@ -11,7 +11,7 @@ if [[ $CURRENT_OS == 'OS X' ]]; then
 elif [[ $CURRENT_OS == 'Linux' ]]; then
     # Linux Env Variables
 
-    if [[ $USER == 'davisjos' ]]; then
+    if [[ $USER == 'vitorbrito' ]]; then
         export ECLIPSE_HOME=/opt/eclipse/
     fi
 elif [[ $CURRENT_OS == 'Cygwin' ]]; then
